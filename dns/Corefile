@@ -1,0 +1,16 @@
+.:53 {
+    pdsql mysql root:secret@tcp(127.0.0.1:3306)/homestead {
+        debug db
+        auto-migrate
+    }
+    loadbalance round_robin
+    fallback original NXDOMAIN . 8.8.8.8:53 8.8.4.4:53
+    fallback original SERVFAIL . 1.1.1.1:53
+    cache {
+        success 5000
+        denial 2500
+    }
+    prometheus
+    health
+    log
+}
