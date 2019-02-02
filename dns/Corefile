@@ -1,4 +1,4 @@
-.:53 {
+(urbandns) {
     pdsql mysql root:secret@tcp(127.0.0.1:3306)/homestead {
         debug db
         auto-migrate
@@ -14,3 +14,12 @@
     health
     log
 }
+
+.:53 {
+    import urbandns
+}
+
+#tls://.:853 {
+#	tls tls/cert.pem tls/key.pem tls/ca.pem
+#	import urbandns
+#}
