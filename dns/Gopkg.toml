@@ -34,10 +34,6 @@
   name = "github.com/coredns/fallback"
 
 [[constraint]]
-  branch = "master"
-  name = "github.com/hmilkovi/rds"
-
-[[constraint]]
   name = "github.com/jinzhu/gorm"
   version = "1.9.2"
 

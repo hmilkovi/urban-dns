@@ -244,11 +244,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:87e4bf2c672494e77564e67b3948a5dea21eda53a612f0e768370e4ba9ad5772"
-  name = "github.com/hmilkovi/rds"
-  packages = ["."]
+  digest = "1:9661fb4f181fd29c24d0cd512c139652918fc3e34a138f369a101568c35f0e26"
+  name = "github.com/hmilkovi/urban-dns"
+  packages = ["coredns_database"]
   pruneopts = "UT"
-  revision = "28380a3fc489a2d0bbd72b6ac05e3083a312d67d"
+  revision = "5d7d3dad9a31c331f63d1d0692c9017a543679ad"
 
 [[projects]]
   digest = "1:d97449baab35722b65361a58c2b016404aa25c88dc31ded1c46df02f1e3a045d"
@@ -581,7 +581,7 @@
     "github.com/coredns/coredns/plugin/trace",
     "github.com/coredns/coredns/plugin/whoami",
     "github.com/coredns/fallback",
-    "github.com/hmilkovi/rds",
+    "github.com/hmilkovi/urban-dns/coredns_database",
     "github.com/jinzhu/gorm/dialects/mysql",
     "github.com/jinzhu/gorm/dialects/sqlite",
   ]

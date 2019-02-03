@@ -1,6 +1,6 @@
 // Package whoami implements a plugin that returns details about the resolving
 // querying it.
-package rds
+package dnsdb
 
 import (
 	"net"

@@ -32,7 +32,7 @@ import (
 	_ "github.com/coredns/fallback"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
-	_ "github.com/hmilkovi/rds"
+	_ "github.com/hmilkovi/urban-dns/coredns_database"
 )
 
 var directives = []string{
