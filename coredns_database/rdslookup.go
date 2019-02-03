@@ -83,7 +83,11 @@ func (self PowerDNSGenericSQLBackend) ServeDNS(ctx context.Context, w dns.Respon
 				}
 			case *dns.A:
 				rr.Hdr = hrd
-				rr.A = net.ParseIP(v.Content)
+				if v.Blocked {
+					rr.A = net.ParseIP("0.0.0.0")
+				} else {
+					rr.A = net.ParseIP(v.Content)
+				}
 			case *dns.AAAA:
 				rr.Hdr = hrd
 				rr.AAAA = net.ParseIP(v.Content)
