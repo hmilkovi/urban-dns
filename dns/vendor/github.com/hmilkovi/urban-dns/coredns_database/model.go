@@ -22,6 +22,5 @@ type Record struct {
 	Prio      int
 	ChangDate int
 	Disabled  bool
-	//ordername             VARCHAR(255) BINARY DEFAULT NULL,
-	//auth                  TINYINT(1) DEFAULT 1,
+	Blocked bool
 }

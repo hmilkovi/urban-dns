@@ -244,11 +244,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:9661fb4f181fd29c24d0cd512c139652918fc3e34a138f369a101568c35f0e26"
+  digest = "1:1fd2cd5ae42a8f269c759470089507856ad10a599b527ff1d51e01973883e72d"
   name = "github.com/hmilkovi/urban-dns"
   packages = ["coredns_database"]
   pruneopts = "UT"
-  revision = "5d7d3dad9a31c331f63d1d0692c9017a543679ad"
+  revision = "4cc20664e58f9242dda2f600486e768754509f2f"
 
 [[projects]]
   digest = "1:d97449baab35722b65361a58c2b016404aa25c88dc31ded1c46df02f1e3a045d"
